@@ -7,7 +7,7 @@ import numpy as np
 model = YOLO('best.pt')
 
 # Load the image
-image_path = 'test.jpg'
+image_path = 'Inference/test.jpg'
 image = cv2.imread(image_path)
 
 # Run inference
@@ -33,4 +33,4 @@ im = Image.fromarray(image_rgb)
 im.show()
 
 # Save the image with results
-im.save('results.jpg')
+im.save('Inference/results.jpg')
